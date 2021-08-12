@@ -8,6 +8,11 @@
  * Example
  * > sayHello("codeup") // returns "Hello, codeup!"
  */
+function sayHello(name){
+    return "Hello " + name + "!";
+}
+var companyGreeting = sayHello("Ol'Head");
+console.log(companyGreeting);
 
 /**
  * TODO:
