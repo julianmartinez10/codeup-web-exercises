@@ -11,8 +11,6 @@
 function sayHello(name){
     return "Hello " + name + "!";
 }
-var companyGreeting = sayHello("Ol'Head");
-console.log(companyGreeting);
 
 /**
  * TODO:
@@ -21,6 +19,8 @@ console.log(companyGreeting);
  *
  * console.log 'helloMessage' to check your work
  */
+var helloMessage = sayHello("Julian");
+console.log(helloMessage);
 
 /**
  * TODO:
@@ -28,6 +28,8 @@ console.log(companyGreeting);
  * variable to the 'sayHello' function. You should see the same output in the
  * console.
  */
+var myName = "Julian";
+console.log(sayHello(myName));
 
 // Don't modify the following line, it generates a random number between 1 and 3
 // and stores it in a variable named random
