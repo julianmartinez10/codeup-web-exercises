@@ -14,11 +14,15 @@ console.log("Hello from external JavaScript");
 // When the exercise asks you to use a number, instead use a prompt to ask the user for that number.
 // Use an alert to show the results of each problem.
 
-//  Write some JavaScript code, that is, variables and operators, to describe the following scenarios. Do not worry about the real operations to get the values, the goal of these exercises is to understand how real world conditions can be represented with code.
-//
-// You have rented some movies for your kids: The little mermaid (for 3 days), Brother Bear
-// (for 5 days, they love it), and Hercules (1 day, you don't know yet if they're going to like it).
+// You have rented some movies for your kids: The little mermaid (for 3 days), Brother Bear, (for
+// 5 days, they love it), and Hercules (1 day, you don't know yet if they're going to like it).
 // If price for a movie per day is $3, how much will you have to pay?
+var userMoviePick = prompt("How many days do you want to rent Little Mermaid?");
+var userMoviePick2 = prompt("How many days do you want to rent Brother Bear?");
+var userMoviePick3 = prompt("How many days do you want to rent Hercules?");
+var totalDays = Number(userMoviePick) + Number(userMoviePick2) + Number(userMoviePick3);
+alert("Your total cost " + (totalDays * 3));
+console.log ("Total Days: " + totalDays);
 
 // Suppose you're working as a contractor for 3 companies: Google, Amazon and Facebook, they pay you a different rate per hour. Google pays $400, Amazon $380, and Facebook $350. How much will you receive in payment for this week? You worked 10 hours for Facebook, 6 hours for Google and 4 hours for Amazon.
 // A student can be enrolled in a class only if the class is not full and the class schedule does not conflict with her current schedule.
