@@ -25,18 +25,24 @@ console.log("Hello from external JavaScript");
 // console.log ("Total Days: " + totalDays);
 
 // Suppose you're working as a contractor for 3 companies: Google, Amazon and Facebook, they pay you a different rate per hour. Google pays $400, Amazon $380, and Facebook $350. How much will you receive in payment for this week? You worked 10 hours for Facebook, 6 hours for Google and 4 hours for Amazon.
-var userHrsGoogle = prompt("How many hours did you work with Google?");
-var userHrsAmazon = prompt("How many hours did you work with Amazaon?");
-var userHrsFB = prompt("How many hours did you work with Facebook?");
-var weekPayGoogle = Number(userHrsGoogle) * 400;
-console.log("Google total: " + weekPayGoogle);
-var weekPayAmazon = Number(userHrsAmazon) * 380;
-console.log("Google total: " + weekPayAmazon);
-var weekPayFB = Number(userHrsFB) * 350;
-console.log("Google total: " + weekPayFB);
-var weekPayTotal = weekPayGoogle + weekPayAmazon + weekPayFB;
-alert("Your weeks pay is: $" + weekPayTotal.toFixed(2));
+// var userHrsGoogle = prompt("How many hours did you work with Google?");
+// var userHrsAmazon = prompt("How many hours did you work with Amazaon?");
+// var userHrsFB = prompt("How many hours did you work with Facebook?");
+// var weekPayGoogle = Number(userHrsGoogle) * 400;
+// console.log("Google total: " + weekPayGoogle);
+// var weekPayAmazon = Number(userHrsAmazon) * 380;
+// console.log("Amazon total: " + weekPayAmazon);
+// var weekPayFB = Number(userHrsFB) * 350;
+// console.log("Facebook total: " + weekPayFB);
+// var weekPayTotal = weekPayGoogle + weekPayAmazon + weekPayFB;
+// alert("Your weeks pay is: $" + weekPayTotal.toFixed(2));
+
+// A student can be enrolled in a class only if the class is not full and the class schedule does not
+// conflict with her current schedule.
+var classStatus = prompt("How many students enrolled?");
+var enrollInClass = Number(classStatus) <= 22;
+alert("Class enrollment eligible: " + enrollInClass);
 
 
-// A student can be enrolled in a class only if the class is not full and the class schedule does not conflict with her current schedule.
+
 // A product offer can be applied only if a person buys more than 2 items, and the offer has not expired. Premium members do not need to buy a specific amount of products.
