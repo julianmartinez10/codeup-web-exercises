@@ -29,8 +29,11 @@ var userHrsGoogle = prompt("How many hours did you work with Google?");
 var userHrsAmazon = prompt("How many hours did you work with Amazaon?");
 var userHrsFB = prompt("How many hours did you work with Facebook?");
 var weekPayGoogle = Number(userHrsGoogle) * 400;
+console.log("Google total: " + weekPayGoogle);
 var weekPayAmazon = Number(userHrsAmazon) * 380;
+console.log("Google total: " + weekPayAmazon);
 var weekPayFB = Number(userHrsFB) * 350;
+console.log("Google total: " + weekPayFB);
 var weekPayTotal = weekPayGoogle + weekPayAmazon + weekPayFB;
 alert("Your weeks pay is: $" + weekPayTotal.toFixed(2));
 
