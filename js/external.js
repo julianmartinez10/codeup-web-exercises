@@ -45,7 +45,7 @@ console.log("Hello from external JavaScript");
 
 // A product offer can be applied only if a person buys more than 2 items, and the offer has not expired.
 // Premium members do not need to buy a specific amount of products.
-var premMemStatus = prompt("Are you a premium member?");
+var premMemStatus = confirm("Are you a premium member? Cancel if not.");
 alert("Your a Premium Member: " + premMemStatus);
 var numItemsPurch = prompt("How many items are you purchasing?");
 var productOffer = premMemStatus == 1 || numItemsPurch > 2;
