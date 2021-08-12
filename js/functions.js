@@ -56,6 +56,7 @@ function isTwo(num){
     return num === 2;
 }
 var x = isTwo(random);
+console.log(random);
 console.log(x);
 
 /**
