@@ -39,10 +39,14 @@ console.log("Hello from external JavaScript");
 
 // A student can be enrolled in a class only if the class is not full and the class schedule does not
 // conflict with her current schedule.
-var classStatus = prompt("How many students enrolled?");
-var enrollInClass = Number(classStatus) < 22;
-alert("Class enrollment eligible: " + enrollInClass);
+// var classStatus = prompt("How many students enrolled?");
+// var enrollInClass = Number(classStatus) < 22;
+// alert("Class enrollment eligible: " + enrollInClass);
 
-
-
-// A product offer can be applied only if a person buys more than 2 items, and the offer has not expired. Premium members do not need to buy a specific amount of products.
+// A product offer can be applied only if a person buys more than 2 items, and the offer has not expired.
+// Premium members do not need to buy a specific amount of products.
+var premMemStatus = prompt("Are you a premium member?");
+alert("Your a Premium Member: " + premMemStatus);
+var numItemsPurch = prompt("How many items are you purchasing?");
+var productOffer = premMemStatus == 1 || numItemsPurch > 2;
+alert("You qualify for our Product Offer: " + productOffer);
