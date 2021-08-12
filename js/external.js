@@ -1,10 +1,14 @@
+'use strict';
+
 console.log("Hello from external JavaScript");
 
-alert("Welcome to my Website!");
+// alert("Welcome to my Website!");
 
 
-var userInput = prompt("What is your favorite color?")
-alert("Great, "+userInput+" is my favorite color too!")
+// var userInput = prompt("What is your favorite color?");
+// alert("Great, "+userInput+" is my favorite color too!");
+//
+// confirm("Do you want to remain logged in?");
 
 // Complete exercise 3 from the previous lesson, but write your code in the external.js file instead of in the console.
 // When the exercise asks you to use a number, instead use a prompt to ask the user for that number.
