@@ -40,7 +40,7 @@ console.log("Hello from external JavaScript");
 // A student can be enrolled in a class only if the class is not full and the class schedule does not
 // conflict with her current schedule.
 var classStatus = prompt("How many students enrolled?");
-var enrollInClass = Number(classStatus) <= 22;
+var enrollInClass = Number(classStatus) < 22;
 alert("Class enrollment eligible: " + enrollInClass);
 
 
