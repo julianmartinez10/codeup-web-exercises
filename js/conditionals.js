@@ -19,9 +19,27 @@
  * Test your function by passing various string literals to it and
  * console.logging the function's return value
  */
-function analyzeColor(color){
+// function analyzeColor(color){
+//     if(color === "blue"){
+//         return `${color} is the color of the sky!`;
+//     }else if(color === "red"){
+//         return `Strawberries are ${color}`;
+//     }else{
+//         return `I don't know much about the color ${color}.`;
+//     }
+// }
 
-
+function analyzeColorSwitch(color){
+    switch(color){
+        case "blue":
+            return `${color} is the color of the sky!`;
+            break;
+        case "red":
+            return `Strawberries are ${color}.`;
+            break;
+        default:
+            return `I don't know much about the color ${color}`;
+    }
 }
 // Don't change the next two lines!
 // These lines create two variables for you:
