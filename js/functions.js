@@ -87,7 +87,8 @@ var tipPercent = prompt("Hope service was good. What percentage(decimal) tip wou
     " leave?");
 console.log("Ok, you're tip percentage is: " + tipPercent + "!!!");
 var dollarAmtTip = calculateTip(Number(tipPercent), Number(billTotal));
-alert("Thank you for generously tipping " + dollarAmtTip + "!!!")
+alert("Thank you for generously tipping $" + dollarAmtTip + "!!!");
+
 /**
  * TODO:
  * Create a function named `applyDiscount`. This function should accept a price
@@ -102,3 +103,9 @@ alert("Thank you for generously tipping " + dollarAmtTip + "!!!")
  *
  * > applyDiscount(45.99, 0.12) // 40.4712
  */
+function applyDiscount(originalPrice, discountPercent){
+    return originalPrice*(100 - discountPercent);
+}
+
+var bruceDiscount = applyDiscount(32.45, .25);
+console.log(bruceDiscount);
