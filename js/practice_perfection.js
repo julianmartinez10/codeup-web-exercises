@@ -62,15 +62,57 @@ function rest(input){
 // Write a function called reverse(input) that takes a string and returns it reversed.
 function reverse(input){
 
-    return
+    return " ";
 }
-//     Write a function called isNumeric(input) that takes an input and returns a boolean if the input is numeric.
-//     Write a function called count(input) that takes in a string and returns the number of characters.
-//     Write a function called add(a, b) that returns the sum of a and b
+// Write a function called isNumeric(input) that takes an input and returns a boolean if the
+// input is numeric.
+function isNumeric(input){
+    return Number.isInteger(input);
+    // return Number.isInteger(Math.floor(input));
+}
+// Write a function called count(input) that takes in a string and returns the number of
+// characters.
+function count(input){
+    var str = input.toString();
+    return str.length;
+}
+// Write a function called add(a, b) that returns the sum of a and b
+function add(a, b){
+    return a + b;
+}
 // Write a function called subtract(a, b) that return the difference between the two inputs.
-//     Write multiply(a, b) function that returns the product
+function subtract(a, b){
+    return a-b;
+}
+// Write multiply(a, b) function that returns the product
+function multiply(a, b){
+    return a*b;
+}
 // Write a divide(numerator, denominator) function that returns a divided by b
-// Write a remainder(number, divisor) function that returns the remainder left over when dividing number by the divisor
+function divide(a, b){
+    return a/b;
+}
+// Write a remainder(number, divisor) function that returns the remainder left over when
+// dividing number by the divisor
+function remainder(number, divisor){
+    return number % divisor;
+}
 // Write the function square(a) that takes in a number and returns the number multiplied by itself.
-//     Write a function called sumOfSquares(a, b) that uses only your add() function and your square function and not + or * operators
-// Write a function called doMath(operator, a, b) that takes 3 parameters. The first parameter is the name of the math function you want to apply. a and b are the two numbers to run that function on.
+function square(a){
+    return Math.pow(a, 2);
+}
+// Write a function called sumOfSquares(a, b) that uses only your add() function and your square
+// function and not + or * operators
+function sumOfSquares(a, b){
+    var sqA = square(a);
+    console.log(sqA);
+    var sqB = square(b);
+    console.log(sqB);
+    return add(sqA, sqB);
+}
+// Write a function called doMath(operator, a, b) that takes 3 parameters. The first parameter
+// is the name of the math function you want to apply. a and b are the two numbers to run that
+// function on.
+function doMath(operator, a, b){
+    return ;
+}
