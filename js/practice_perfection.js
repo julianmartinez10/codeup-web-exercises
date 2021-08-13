@@ -36,7 +36,15 @@ console.log(sayString('codeup'));
 //     Challenge Function Drills
 //     1,000 hours
 // Write a function called identity(input) that takes in an argument called input and returns that input.
-//     Write a function called getRandomNumber(min, max) that returns a random number between min and max values sent to that function call.
+function identity(input){
+    return input;
+}
+// Write a function called getRandomNumber(min, max) that returns a random number between min
+// and max values sent to that function call.
+function getRandomNumber(min, max){
+    var randomNum = Math.random() * (max - min) + min;
+    return randomNum;
+}
 // Write a function called first(input) that returns the first character in the provided string.
 //     Write a function called last(input) that returns the last character of a string
 // Write a function called rest(input) that returns everything but the first character of a string.
