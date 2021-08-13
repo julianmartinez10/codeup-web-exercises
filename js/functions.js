@@ -104,8 +104,8 @@ alert("Thank you for generously tipping $" + dollarAmtTip + "!!!");
  * > applyDiscount(45.99, 0.12) // 40.4712
  */
 function applyDiscount(originalPrice, discountPercent){
-    return originalPrice*(100 - discountPercent);
+    return originalPrice*(1 - discountPercent);
 }
 
 var bruceDiscount = applyDiscount(32.45, .25);
-console.log(bruceDiscount);
+console.log(bruceDiscount.toFixed(2));
