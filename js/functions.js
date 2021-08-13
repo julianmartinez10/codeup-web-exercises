@@ -90,7 +90,7 @@ var tipDecimal = Number(tipPercent)/100;
 console.log("Tip Decimal: " + tipDecimal );
 var dollarAmtTip = calculateTip(tipDecimal, billNum);
 console.log(dollarAmtTip);
-alert("Thank you for generously tipping $" + dollarAmtTip + "!!!");
+alert("Thank you for generously tipping $" + dollarAmtTip.toFixed(2) + "!!!");
 
 /**
  * TODO:
