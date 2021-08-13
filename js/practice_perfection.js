@@ -37,18 +37,33 @@ console.log(sayString('codeup'));
 //     1,000 hours
 // Write a function called identity(input) that takes in an argument called input and returns that input.
 function identity(input){
+    console.log(input);
     return input;
 }
 // Write a function called getRandomNumber(min, max) that returns a random number between min
 // and max values sent to that function call.
 function getRandomNumber(min, max){
     var randomNum = Math.random() * (max - min) + min;
-    return randomNum;
+    console.log(randomNum)
+    return Math.floor(randomNum);
 }
 // Write a function called first(input) that returns the first character in the provided string.
-//     Write a function called last(input) that returns the last character of a string
+function first(input){
+    return input.charAt(0);
+}
+// Write a function called last(input) that returns the last character of a string
+function last(input){
+    return input.charAt(input.length - 1);
+}
 // Write a function called rest(input) that returns everything but the first character of a string.
-//     Write a function called reverse(input) that takes a string and returns it reversed.
+function rest(input){
+    return input.substring(1, input.length);
+}
+// Write a function called reverse(input) that takes a string and returns it reversed.
+function reverse(input){
+
+    return
+}
 //     Write a function called isNumeric(input) that takes an input and returns a boolean if the input is numeric.
 //     Write a function called count(input) that takes in a string and returns the number of characters.
 //     Write a function called add(a, b) that returns the sum of a and b
