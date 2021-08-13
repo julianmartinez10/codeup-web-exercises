@@ -82,11 +82,14 @@ console.log(calculateTip(.20, 20));
  * then display the dollar amount they should tip
  */
 var billTotal = prompt("How much was your bill?");
-console.log("This is the total bill: " + billTotal);
-var tipPercent = prompt("Hope service was good. What percentage(decimal) tip would you like to" +
+var billNum = Number(billTotal).toFixed(2);
+console.log("This is the total bill: $" + billNum);
+var tipPercent = prompt("Hope service was good. What percentage tip would you like to" +
     " leave?");
-console.log("Ok, you're tip percentage is: " + tipPercent + "!!!");
-var dollarAmtTip = calculateTip(Number(tipPercent), Number(billTotal));
+var tipDecimal = Number(tipPercent)/100;
+console.log("Tip Decimal: " + tipDecimal );
+var dollarAmtTip = calculateTip(tipDecimal, billNum);
+console.log(dollarAmtTip);
 alert("Thank you for generously tipping $" + dollarAmtTip + "!!!");
 
 /**
