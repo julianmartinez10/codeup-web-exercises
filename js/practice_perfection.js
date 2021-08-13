@@ -34,6 +34,7 @@ function sayString(someString){
 console.log(sayString('codeup'));
 
 //     Challenge Function Drills
+//     1,000 hours
 // Write a function called identity(input) that takes in an argument called input and returns that input.
 //     Write a function called getRandomNumber(min, max) that returns a random number between min and max values sent to that function call.
 // Write a function called first(input) that returns the first character in the provided string.
