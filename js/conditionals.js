@@ -53,7 +53,8 @@ var randomColor = colors[Math.floor(Math.random() * colors.length)];
  * Pass the `randomColor` variable to your function and console.log the results.
  * You should see a different message every time you refresh the page
  */
-
+console.log(randomColor);
+console.log(analyzeColorSwitch(randomColor));
 /**
  * TODO:
  * Refactor your above function to use a switch-case statement
