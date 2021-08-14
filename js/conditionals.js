@@ -19,15 +19,15 @@
  * Test your function by passing various string literals to it and
  * console.logging the function's return value
  */
-// function analyzeColor(color){
-//     if(color === "blue"){
-//         return `${color} is the color of the sky!`;
-//     }else if(color === "red"){
-//         return `Strawberries are ${color}`;
-//     }else{
-//         return `I don't know much about the color ${color}.`;
-//     }
-// }
+function analyzeColor(color){
+    if(color === "blue"){
+        return `${color} is the color of the sky!`;
+    }else if(color === "red"){
+        return `Strawberries are ${color}`;
+    }else{
+        return `I don't know much about the color ${color}.`;
+    }
+}
 
 // Don't change the next two lines!
 // These lines create two variables for you:
@@ -50,13 +50,13 @@ console.log(analyzeColorSwitch(randomColor));
 function analyzeColorSwitch(color){
     switch(color){
         case "blue":
-            alert(`${color} is the color of the sky!`);
+            return(`${color} is the color of the sky!`);
             break;
         case "red":
-            alert (`Strawberries are ${color}.`);
+            return (`Strawberries are ${color}.`);
             break;
         default:
-            alert (`I don't know much about the color ${color}`);
+            return (`I don't know much about the color ${color}`);
     }
 }
 /**
@@ -89,19 +89,31 @@ analyzeColorSwitch(colorChoice);
  * Test your function by passing it various values and checking for the expected
  * return value.
  */
-var randomLuck = Math.floor(Math.random()*5);
+var randomLuck = Math.floor(Math.random()*6);
 
 function calculteTotal(luckyNum, totalAmt){
+    console.log(randomLuck);
     switch(luckyNum){
         case 1:
             return totalAmt - (totalAmt*.1);
             break;
-        case:
-            // creating cases for each scenario
-
+        case 2:
+            return totalAmt - (totalAmt*.25);
+            break;
+        case 3:
+            return totalAmt - (totalAmt*.35);
+            break;
+        case 4:
+            return totalAmt - (totalAmt*.45);
+            break;
+        case 5:
+            return totalAmt - totalAmt;
+            break;
+        default:
+            return totalAmt;
     }
-    return;
 }
+console.log(calculteTotal(randomLuck, 100));
 /**
  * TODO:
  * Uncomment the line below to generate a random number between 0 and 6.
