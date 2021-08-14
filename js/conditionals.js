@@ -95,22 +95,22 @@ function calculteTotal(luckyNum, totalAmt){
     console.log(randomLuck);
     switch(luckyNum){
         case 1:
-            return totalAmt - (totalAmt*.1);
+            alert (`Your lucky number is ${luckyNum} \nYour price before discount is ${totalAmt}. \nYour price after discount is ${totalAmt - (totalAmt * .1)}`);
             break;
         case 2:
-            return totalAmt - (totalAmt*.25);
+            alert (`Your lucky number is ${luckyNum} \nYour price before discount is ${totalAmt}. \nYour price after discount is ${totalAmt - (totalAmt*.25)}`);
             break;
         case 3:
-            return totalAmt - (totalAmt*.35);
+            alert (`Your lucky number is ${luckyNum} \nYour price before discount is ${totalAmt}. \nYour price after discount is ${totalAmt - (totalAmt*.35)}`);
             break;
         case 4:
-            return totalAmt - (totalAmt*.45);
+            alert (`Your lucky number is ${luckyNum} \nYour price before discount is ${totalAmt}. \nYour price after discount is ${totalAmt - (totalAmt*.45)}`);
             break;
         case 5:
-            return totalAmt - totalAmt;
+            alert (`Your lucky number is ${luckyNum} \nYour price before discount is ${totalAmt}. \nYour price after discount is ${totalAmt - totalAmt}`);
             break;
         default:
-            return totalAmt;
+            alert (`Your lucky number is ${luckyNum} \nYour price before discount is ${totalAmt}. \nYour price after discount is ${totalAmt}`);
     }
 }
 console.log(calculteTotal(randomLuck, 100));
@@ -122,7 +122,7 @@ console.log(calculteTotal(randomLuck, 100));
  * price before the discount was, and what their price after the discount is.
  */
 // Generate a random number between 0 and 6
-// var luckyNumber = Math.floor(Math.random() * 6);
+var luckyNumber = Math.floor(Math.random() * 6);
 
 /**
  * TODO:
