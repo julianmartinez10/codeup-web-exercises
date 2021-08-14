@@ -89,7 +89,19 @@ analyzeColorSwitch(colorChoice);
  * Test your function by passing it various values and checking for the expected
  * return value.
  */
+var randomLuck = Math.floor(Math.random()*5);
 
+function calculteTotal(luckyNum, totalAmt){
+    switch(luckyNum){
+        case 1:
+            return totalAmt - (totalAmt*.1);
+            break;
+        case:
+            // creating cases for each scenario
+
+    }
+    return;
+}
 /**
  * TODO:
  * Uncomment the line below to generate a random number between 0 and 6.
