@@ -29,18 +29,6 @@
 //     }
 // }
 
-function analyzeColorSwitch(color){
-    switch(color){
-        case "blue":
-            return `${color} is the color of the sky!`;
-            break;
-        case "red":
-            return `Strawberries are ${color}.`;
-            break;
-        default:
-            return `I don't know much about the color ${color}`;
-    }
-}
 // Don't change the next two lines!
 // These lines create two variables for you:
 // - `colors`: a list of the colors of the rainbow
@@ -59,13 +47,26 @@ console.log(analyzeColorSwitch(randomColor));
  * TODO:
  * Refactor your above function to use a switch-case statement
  */
-
+function analyzeColorSwitch(color){
+    switch(color){
+        case "blue":
+            alert(`${color} is the color of the sky!`);
+            break;
+        case "red":
+            alert (`Strawberries are ${color}.`);
+            break;
+        default:
+            alert (`I don't know much about the color ${color}`);
+    }
+}
 /**
  * TODO:
  * Prompt the user for a color when the page loads, and pass the input from the
  * user to your `analyzeColor` function. Alert the return value from your
  * function to show it to the user.
  */
+var colorChoice = prompt("What's your favorite color?");
+analyzeColorSwitch(colorChoice);
 
 /* ########################################################################## */
 
