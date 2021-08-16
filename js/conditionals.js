@@ -50,13 +50,13 @@ console.log(analyzeColorSwitch(randomColor));
 function analyzeColorSwitch(color){
     switch(color){
         case "blue":
-            return(`${color} is the color of the sky!`);
+            alert(`${color} is the color of the sky!`);
             break;
         case "red":
-            return (`Strawberries are ${color}.`);
+            alert(`Strawberries are ${color}.`);
             break;
         default:
-            return (`I don't know much about the color ${color}`);
+            alert(`I don't know much about the color ${color}`);
     }
 }
 /**
