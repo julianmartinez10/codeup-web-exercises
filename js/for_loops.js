@@ -10,3 +10,13 @@ function showMultiplicationTable(num){
     console.log(`${num} X 9 = ${(num*9)}`);
     console.log(`${num} X 10 = ${(num*10)}`);
 }
+
+for(var i = 0; i < 10; i++){
+    console.log('iteration #' + i);
+    var randoNum = Math.floor(Math.random() * 200) + 20;
+    if(randoNum % 2 === 0){
+        console.log(`${randoNum} is even`);
+    }else{
+        console.log(`${randoNum} is odd`);
+    }
+}
