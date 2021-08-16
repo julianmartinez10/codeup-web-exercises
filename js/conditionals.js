@@ -148,21 +148,23 @@ var luckyNumber = Math.floor(Math.random() * 6);
 // }else{
 //     console.log("No worries maybe next time.")
 // }
-var userAns = (confirm("Would you like to enter a number?")) ? var numPick prompt("Enter a Number") : "No" + " worries maybe next time.";
+var userAns = (confirm("Would you like to enter a number?")) ? prompt("Enter a Number") : alert("No worries maybe next time.");
+console.log(userAns);
 
 // if (Number(numPick) % 2 !== 0){
 //     alert("Your chosen number is odd.");
 // }else {
 //     alert("Your chosen number is even.")
 // }
-var numOdd = Number(numPick) % 2 !== 0;
-numOdd = (false) ?  alert("Your chosen number is odd.") : alert("Your chosen number is even.");
+var numOdd = Number(userAns) % 2 === 0;
+numOdd = (numOdd) ?  alert("Your chosen number is even.") : alert("Your chosen number is odd.");
 
-alert(`Your chosen number plus 100 is: ${(Number(numPick) + 100)}`)
+alert(`Your chosen number plus 100 is: ${(Number(userAns) + 100)}`)
 
-if (numPick > 0){
-    alert("Your chosen number is POSITIVE");
-}else {
-    alert("Your chosen number is NEGATIVE.")
-}
-
+// if (userAns > 0){
+//     alert("Your chosen number is POSITIVE");
+// }else {
+//     alert("Your chosen number is NEGATIVE.");
+// }
+var isPositive = userAns > 0;
+isPositive = (isPositive) ? alert("Your chosen number is POSITIVE") : alert("Your chosen number is NEGATIVE.");
