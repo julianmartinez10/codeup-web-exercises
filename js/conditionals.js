@@ -140,19 +140,23 @@ var luckyNumber = Math.floor(Math.random() * 6);
  * Can you refactor your code to use functions?
  * HINT: The way we prompt for a value could be improved
  */
-var userAns = confirm("Would you like to enter a number?");
-var numPick = prompt("Enter a Number: ");
-if(userAns === true){
-    numPick;
-}else{
-    console.log("No worries maybe next time.")
-}
+// var userAns = confirm("Would you like to enter a number?");
+// var numPick = prompt("Enter a Number: ");
 
-if (numPick % 2 !== 0){
-    alert("Your chosen number is odd.");
-}else if(numPick % 2 === 0){
-    alert("Your chosen number is odd.")
-}
+// if(userAns){
+//     numPick;
+// }else{
+//     console.log("No worries maybe next time.")
+// }
+var userAns = (confirm("Would you like to enter a number?")) ? var numPick prompt("Enter a Number") : "No" + " worries maybe next time.";
+
+// if (Number(numPick) % 2 !== 0){
+//     alert("Your chosen number is odd.");
+// }else {
+//     alert("Your chosen number is even.")
+// }
+var numOdd = Number(numPick) % 2 !== 0;
+numOdd = (false) ?  alert("Your chosen number is odd.") : alert("Your chosen number is even.");
 
 alert(`Your chosen number plus 100 is: ${(Number(numPick) + 100)}`)
 
