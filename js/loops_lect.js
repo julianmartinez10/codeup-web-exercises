@@ -3,9 +3,12 @@
 //~*~ While Loops ~*~
 //
 
-//are we there yet?
-var areWeThereYet;
-
+// //are we there yet?
+// var areWeThereYet;
+//
+// while(!areWeThereYet){
+//     areWeThereYet = confirm("Are we there yet?");
+// }
 
 // In the above example, we'll continue to prompt the user asking if we're there yet until we finally get
 // a positive confirmation. While the condition is not true (!areWeThereYet), do some stuff (from the body of the loop)
@@ -16,10 +19,20 @@ var areWeThereYet;
 // If we give Codie the toy from the get go, we won't see the behavior in the loop at all.
 
 // TODO: Quasar~ create a WHILE loop that runs as long as i is less than 10;
-
+// var i = 0;
+// while(i < 10){
+//     console.log(`Iteration #${i}`);
+//     i++;
+// }
+//
+// var j = 10;
+// while(j>0){
+//     console.log(`J is ${j}`);
+//     j--;
+// }
 
 //~*~ Do-While Loops ~*~
-
+//  TODO:
 
 // A do/while loop is quite similar to a while loop. The biggest difference is that a do/while loop will run at least once
 // [do this thing for sure this first time . . then check condition to continue VS. check condition . . will I do this thing at all?]
@@ -37,6 +50,10 @@ var areWeThereYet;
 // do {
 //     console.log("But what about me?");
 // } while (false);
+
+// do{
+//     var secret = prompt("What is the secret password?");
+// }while(secret !== "sesame");
 
 // Notice that even with a condition that has a boolean value of false, the do while loop will run one time be for stopping.
 
