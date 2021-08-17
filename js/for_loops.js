@@ -25,10 +25,10 @@
 //     }
 // }
 
-// //  question3 putting on hold
-// for(var i = 1; i < 10; i+=i){
-//     console.log(i)
-// }
+//  question3 putting on hold
+for(var i = 1; i < 10; i+=i){
+    console.log();
+}
 
 for(var i = 100; i > 20; i-=5){
     console.log(i);
