@@ -18,7 +18,7 @@
 // 32768
 // 65536
 var i = 1;
-while(i < 10){
+while(i < 50000){
+    i *= 2;
     console.log(i);
-    i ++;
 }
