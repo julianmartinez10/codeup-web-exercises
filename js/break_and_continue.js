@@ -15,15 +15,19 @@
 
 // Use a loop and the continue statement to output all the odd numbers between 1 and 50, except for the number the user entered.
 var userInput = prompt("Select an odd number between 1 and 50");
+var numPick = Number(userInput);
+console.log(`Number to skip ${numPick}`);
 
 for(var i=1; i<50; i++){
-    var numPick = Number(userInput);
-    console.log(`Number to skip ${numPick}`);
-    if(numPick % 2 !== 0){
-        console.log(`${numPick} is an odd number!`);
+    if(i % 2 !== 0){
+        console.log(`${i} is an odd number!`);
+        if(i === numPick){
+            console.log(`Yikes, we skipping ${numPick}`);
+            continue;
+        }
     }
-    if(numPick === i){
-        console.log(`Yikes, we are skipping ${i}`);
-        continue;
-    }
+    // if(numPick === i){
+    //     console.log(`Yikes, we are skipping ${numPick}`);
+    //     continue;
+    // }
 }
