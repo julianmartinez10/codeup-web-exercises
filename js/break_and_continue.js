@@ -20,11 +20,11 @@ console.log(`Number to skip ${numPick}`);
 
 for(var i=1; i<50; i++){
     if(i % 2 !== 0){
-        console.log(`${i} is an odd number!`);
         if(i === numPick){
             console.log(`Yikes, we skipping ${numPick}`);
             continue;
         }
+        console.log(`${i} is an odd number!`);
     }
     // if(numPick === i){
     //     console.log(`Yikes, we are skipping ${numPick}`);
