@@ -25,13 +25,15 @@
 //     }
 // }
 
-// //  question4 putting on hold
+//  question4 putting on hold
 // for(var i = 1; i < 10; i++){
-//     for(var j = 1; j < 10; j++){
-//         console.log(i);
+//     var output = '';
+//     for (var j = 0; j < i; j++){
+//         output = output + i.toString();
 //     }
+//     console.log(output);
 // }
 
-// for(var i = 100; i > 20; i-=5){
+// for(var i = 100; i > 0; i-=5){
 //     console.log(i);
 // }
