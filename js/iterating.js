@@ -28,14 +28,14 @@ console.log(names.length);
      * array.
      */
 for(var i = 0; i < names.length; i++){
-    console.log(`Name: ${names[i]}`);
+    console.log(`For Loop Name: ${names[i]}`);
 }
     /**
      * TODO:
      * Refactor your above code to use a `forEach` loop
      */
 names.forEach(function(name){
-    console.log(`Name: ${name}`);
+    console.log(`For Each Loop Name: ${name}`);
     })
     /**
      * TODO:
@@ -64,8 +64,4 @@ names.forEach(function(name){
     }
 })();
 
-// Exercises
-// Please follow the instructions below.
-//
-//     Open iterating.js and complete the TODO items there.
 //     View the results in your browser to test for the expected output.
