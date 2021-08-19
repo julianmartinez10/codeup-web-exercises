@@ -50,7 +50,18 @@ names.forEach(function(name){
      *  > second([1, 2, 3, 4, 5]) // returns 2
      *  > last([1, 2, 3, 4, 5]) // return 5
      */
-
+    function first(arr){
+        var firstItem = arr[0]
+        return firstItem;
+    }
+    function second(arr){
+        var secondItem = arr[1]
+        return secondItem;
+    }
+    function last(arr){
+        var lastItem = arr[arr.length-1]
+        return lastItem;
+    }
 })();
 
 // Exercises
