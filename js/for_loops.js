@@ -25,11 +25,15 @@
 //     }
 // }
 
-//  question3 putting on hold
-for(var i = 1; i < 10; i+=i){
-    console.log();
+//  question4 putting on hold
+for(var i = 1; i < 10; i++){
+    var output = '';
+    for (var j = 0; j < i; j++){
+        output = output + i.toString();
+    }
+    console.log(output);
 }
 
-for(var i = 100; i > 20; i-=5){
-    console.log(i);
-}
+// for(var i = 100; i > 0; i-=5){
+//     console.log(i);
+// }
