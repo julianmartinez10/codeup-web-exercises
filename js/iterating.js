@@ -51,17 +51,19 @@ names.forEach(function(name){
      *  > last([1, 2, 3, 4, 5]) // return 5
      */
     function first(arr){
-        var firstItem = arr[0]
-        return firstItem;
+        return arr[0];
     }
     function second(arr){
-        var secondItem = arr[1]
-        return secondItem;
+        return arr[1];
     }
     function last(arr){
-        var lastItem = arr[arr.length-1]
-        return lastItem;
+        return arr[arr.length-1];
     }
+    // var testArr = names;
+    // console.log(testArr);
+    // console.log(first(testArr));
+    // console.log(second(testArr));
+    // console.log(last(testArr));
 })();
 
 //     View the results in your browser to test for the expected output.
