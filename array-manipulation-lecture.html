@@ -84,25 +84,25 @@
 
  */
 
-var pies = [
-    "apple",
-    "cherry",
-    "key lime",
-    "huckleberry",
-    "rhubarb"
-];
-var somePie = pies.slice(1, -1);
-console.log(somePie);
-
-// ** create a function that takes in an array of pies baked and return the 3 most recently baked pies
-function piesBaked(arr){
-    return pies.slice(2);
-}
-
-console.log(piesBaked(pies));
+// var pies = [
+//     "apple",
+//     "cherry",
+//     "key lime",
+//     "huckleberry",
+//     "rhubarb"
+// ];
+// var somePie = pies.slice(1, -1);
+// console.log(somePie);
+//
+// // ** create a function that takes in an array of pies baked and return the 3 most recently baked pies
+// function piesBaked(arr){
+//     return pies.slice(-3);
+// }
+// console.log(piesBaked(pies));
 
 
 // ============================= Sorting
+//  does "mutate" original var
 
 // var pies = [
 //     "apple",
@@ -111,14 +111,15 @@ console.log(piesBaked(pies));
 //     "huckleberry",
 //     "rhubarb"
 // ];
-
-// pies.sort(); // change the original value
-
-
-
+//
+// // pies.sort(); // change the original value
+//
+// pies.sort();
+// console.log(pies);
 
 
 // ============================= Reversing
+//  does "mutate" original var
 
 // var pies = [
 //     "apple",
@@ -127,8 +128,13 @@ console.log(piesBaked(pies));
 //     "huckleberry",
 //     "rhubarb"
 // ];
-
-
+//
+// pies.reverse();
+// console.log(pies);
+// pies.sort();
+// console.log(pies);
+// pies.reverse();
+// console.log(pies);
 
 
 // ============================= Split / Join
@@ -139,9 +145,9 @@ console.log(piesBaked(pies));
 // var names = "Bob Sally Mary";
 //
 // var namesArr = names.split(" ");
+// console.log(namesArr);
 //
-// var namesString = namesArr.join("");
-//
+// var namesString = namesArr.join(", ");
 // console.log(namesString);
 
 
@@ -156,19 +162,21 @@ console.log(piesBaked(pies));
 
 // var bondsArray = ["Connery", "Lazenby", "Moore", "Dalton", "Brosnan", "Craig"];
 // var bondsString = bondsArray.join("_");
-//
-//
+
+
 // var output = "";
 // for (var i = 0; i < bondsArray.length; i += 1) {
 //     output += bondsArray[i];
 //     output += ", ";
 // }
-//
+
 // console.log(bondsString);
+// console.log(output);
 
 
 
-// ** Create a function that will take in a formatted string of numbers and return an array of phone numbers without any symbols. Console.log the output of the returned array.
+// ** Create a function that will take in a formatted string of numbers and return an array of phone numbers without any symbols.
+// Console.log the output of the returned array.
 
 /* EXAMPLE...
 
@@ -185,20 +193,32 @@ console.log(piesBaked(pies));
 
 */
 
-// var phoneNumbers = '210-555-2020\n230-555-2020\n512-555-3030';
+var phoneNumbers = '210-555-2020\n230-555-2020\n512-555-3030';
+//  Initial attempt to complete the exercise
+// var stringToArray = phoneNumbers.join("-");
+// function stringToArray(str){
+//     var joinedString = str.join("\n");
+//     return joinedString;
+// }
 
+// console.log(stringToArray);
 
-
-
-
-
-
-
-
-
-
-
-
+//  class solution
+// function cleanPhoneNumbers(phoneNumStr){
+//     var cleanedPhoneNumbers = [];
+//
+//     //Split the string into individual phone numbers.
+//     var phoneNumbersArr = phoneNumStr.split('\n');
+//     phoneNumbersArr.forEach(function(phoneNumber){
+//         //remove the dashes from each phone number
+//         var cleanedPhoneNumber = phoneNumber.split('-').join('');
+//         cleanedPhoneNumbers.push(cleanedPhoneNumber);
+//     })
+//     return cleanedPhoneNumbers;
+// }
+//
+// var results = cleanPhoneNumbers(phoneNumbers);
+// console.log(results);
 
 // ============================= (EXTRA INFO) Splicing Elements
 
