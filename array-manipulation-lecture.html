@@ -29,7 +29,10 @@
 
 
 // ============================= Adding and Removing Elements
-
+//  Manually add an element to the end of an array
+//  Not typically done like below
+// pies[pies.length] = "banana";
+// console.log(pies);
 /*
 
     // The following array methods change the original array value!
@@ -51,15 +54,23 @@
 
 // array iteration
 
-// push
+// // push
+// console.log(pies);
+// pies.push("banana");
+// console.log(pies);
+//
+// // pop - changes original variable
+// var lastPie = pies.pop();
+// console.log(`Last pie in array is ${lastPie}`);
+//
+// // shift
+// var firstPie = pies.shift();
+//
+// // unshift
+// pies.unshift(lastPie);
+// console.log(pies);
 
-// pop
-
-// shift
-
-// unshift
-
-
+//  push|unshift|pop|shift known to mutate the original array == OG Array will be changed
 
 // ============================= Slicing
 
@@ -73,24 +84,22 @@
 
  */
 
-// var pies = [
-//     "apple",
-//     "cherry",
-//     "key lime",
-//     "huckleberry",
-//     "rhubarb"
-// ];
-
+var pies = [
+    "apple",
+    "cherry",
+    "key lime",
+    "huckleberry",
+    "rhubarb"
+];
+var somePie = pies.slice(1, -1);
+console.log(somePie);
 
 // ** create a function that takes in an array of pies baked and return the 3 most recently baked pies
+function piesBaked(arr){
+    return pies.slice(2);
+}
 
-
-
-
-
-
-
-
+console.log(piesBaked(pies));
 
 
 // ============================= Sorting
