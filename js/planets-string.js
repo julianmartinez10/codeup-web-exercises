@@ -12,6 +12,8 @@
      */
 
     console.log(planetsArray);
+    var arrPlanetsToString = planetsArray.join(' <br> ');
+    console.log(arrPlanetsToString);
 
     /**
      * TODO:
