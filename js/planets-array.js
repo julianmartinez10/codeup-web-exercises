@@ -17,10 +17,16 @@
      * Read each console log below, and write some javascript code to perform
      * the step that it describes
      */
+    function printOut(arr){
+        arr.forEach(function(item, index){
+            console.log(`${item} is at index: ${index}`);
+        })
+    }
 
     console.log('Adding "The Sun" to the beginning of the planets array.');
-    planets.unshift('Sun')
-    console.log(planets);
+    planets.unshift('Sun');
+    printOut(planets);
+    // console.log(planets);
 
     console.log('Adding "Pluto" to the end of the planets array.');
     planets.push('Pluto');
