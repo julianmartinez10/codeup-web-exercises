@@ -42,12 +42,23 @@ console.log(person.sayHello());
      * and console.log the relevant messages for each person
      */
 
-    // var shoppers = [
-    //     {name: 'Cameron', amount: 180},
-    //     {name: 'Ryan', amount: 250},
-    //     {name: 'George', amount: 320}
-    // ];
-
+    var shoppers = [
+        {name: 'Cameron', amount: 180},
+        {name: 'Ryan', amount: 250},
+        {name: 'George', amount: 320}
+    ];
+    shoppers.forEach(function(shopper){
+        console.log(`Hello ${shopper.name}. Your total before discount is ${shopper.amount}`);
+        if(shopper.amount >= 200){
+            var discountAmt = shopper.amount * .12;
+            console.log(`Your amount discounted amount is ${discountAmt}!`);
+            shopper.amount = shopper.amount - discountAmt;
+            console.log(`Your total after discount is ${shopper.amount}.`);
+            return shopper.amount;
+        }else{
+            console.log(`I'm sorry ${shopper.name}, but you need to spend at least $200 to qualify for the discount.`);
+        }
+    })
     /** TODO:
      * Create an array of objects that represent books and store it in a
      * variable named `books`. Each object should have a title and an author
