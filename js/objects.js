@@ -135,7 +135,12 @@ var books = [{
      *      ---
      *      ...
      */
-
+books.forEach(function(book, index){
+        console.log(`Book #${index + 1}`);
+        console.log(`Title: ${book.title}`);
+        console.log(`Author: ${book.author.firstName} ${book.author.lastName}`);
+        return `Book #${index + 1}\nTitle: ${book.title}\nAuthor: ${book.author.firstName} ${book.author.lastName}`;
+    });
     /**
      * Bonus:
      * - Create a function named `createBook` that accepts a title and author
@@ -146,5 +151,10 @@ var books = [{
      *   outputs the information described above. Refactor your loop to use your
      *   `showBookInfo` function.
      */
-
+    function createBook(title, author){
+        var newBook = [{newTitle: title,
+        newAuthor: author}];
+        return newBook;
+    }
+    console.log(createBook("Hello World", "Julian Martinez"));
 })();
