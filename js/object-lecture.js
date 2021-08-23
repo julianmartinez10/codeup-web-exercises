@@ -94,16 +94,35 @@ console.log(myCar);
 //We can use dot notation or array notation in similar ways to start accessing these properties
 
 //Let's share some information about our cars :)
-    
+
+// alert(`Hey y'all, I own a ${myCar["make"]} ${myCar.model}`);
 
 //We can tap into our prior understanding of assigning variables thus far and assign a property to a variable:
 
+var myCarYear = myCar.year;
+// alert(`Woops, I forgot to tell y'all what year my vehicle was ${myCarYear}!`);
+
 //What if we wanted to create a more complicated piece of data? Perhaps a list of our cars FEATURES?
 
+myCar.features = ['towing package', 'toolbox', '3 ton jack'];
 
 //Now we could do something like this. . a list of those features in the console
 
+console.log(myCar.features);
+
+myCar.features.forEach(function(feature){
+    console.log(`I am a feature: ${feature}`);
+})
+
 // TODO: Add an array of features that your vehicle has!
+
+myCar.features.push('4 x 4');
+myCar.features.push('Extended Cab');
+myCar.features.push('Classic Cassette Player - :)');
+
+myCar.features.forEach(function(feature){
+    console.log(`I am a feature on updated feature array: ${feature}`);
+})
 
 //I already added an array of features above in the lecture, so I'm good to go.
 
@@ -112,8 +131,20 @@ console.log(myCar);
 
 // TODO: Nest a 'carOwner' object of your own into this growing myCar object and console.log the results!
 
+var carOwner = {
+    firstName: "Julian",
+    lastName: "Martinez",
+    age: 37,
+    zipcode: 78224,
+    contactPhone: "mobile",
+    phoneNumber: 2105550088
+}
+
 //An object can also contain within itself a method (function). We can set it up similarly to our properties, but with a value that is the function expression
 
+myCar.owner = carOwner;
+
+console.log(myCar);
 
 /*
 * * * * * * * * * * * * * * * * * * * * * * * * * *
