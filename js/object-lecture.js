@@ -11,15 +11,15 @@ var myCounty = {
     currentPop: 2003554
 }
 
-// console.log(myCounty);
+console.log(myCounty);
 
 var myDog = {
-    name: "Fenix",
-    age: 11,
-    breed: "Pembroke Welsh Corgi"
+    name: "Fenix",  //  property
+    age: 11,        //  property
+    breed: "Pembroke Welsh Corgi"   //  property
 }
 
-// console.log(myDog);myDog
+console.log(myDog);myDog
 
 //.log-ing the above gets us the object 'printed' or 'viewed' in the console where we can click into the object to see its shape [properties]
 
@@ -30,12 +30,20 @@ var myDog = {
 */
 
 // We can call the 'constructor' for an object and use it to create our objects:
+var myObject1 = new Object();
 
+console.log(myObject1);
 
 //More often, we'll use this object literal notation structure as shown above and below:
+var myObject2 = {};
 
+console.log(myObject2);
 
 //* TODO: Create a new Object and call it 'myCar' using either way to do so shown above (object instance or object literal)
+var myCar = {};
+// console.log(myCar);
+// var myCar2 = new Object();
+// console.log(myCar2);
 
 // That's great! But our car object doesn't have much going on, does it? There's no depth or meat to it - how can we fill our object in?
 
@@ -51,18 +59,28 @@ var myDog = {
 
 // We can use dot notation to do so:
 
+myCar.make = "Ford";
+
 // Or array notation:
 
+myCar["model"] = "F350";
 
 //In general, dot notation is preferred of the two notations
 //We can also set up our objects and properties/methods during object creation
 
+var sigOtherCar = {
+    make: "Jeep",
+    model: "Commander",
+    year: 2006
+}
+
+console.log(sigOtherCar);
 
 // TODO: Fill in your myCar object with properties of make, model, and year with the correct values. If you don't own a vehicle, fill in the details with your favorite vehicle.
 
 //For me? I'm missing the year for myCar so. .
-
-// console.log(myCar);
+myCar.year = 2003;
+console.log(myCar);
 
 //Now I have a completed example of the myCar object - the model and make were added above in prior examples
 
