@@ -51,9 +51,9 @@ console.log(person.sayHello());
         console.log(`Hello ${shopper.name}. Your total before discount is ${shopper.amount}`);
         if(shopper.amount >= 200){
             var discountAmt = shopper.amount * .12;
-            console.log(`Your amount discounted amount is ${discountAmt}!`);
+            console.log(`Your discounted amount is ${discountAmt}!`);
             shopper.amount = shopper.amount - discountAmt;
-            console.log(`Your total after discount is ${shopper.amount}.`);
+            console.log(`Congrats ${shopper.name}, your total after discount is ${shopper.amount}.`);
             return shopper.amount;
         }else{
             console.log(`I'm sorry ${shopper.name}, but you need to spend at least $200 to qualify for the discount.`);
@@ -152,9 +152,23 @@ books.forEach(function(book, index){
      *   `showBookInfo` function.
      */
     function createBook(title, author){
+        //  var nameArr = name.split(" ");
+        //  var firstName = nameArr[0];
+        //  var lastName = nameArr[1];
+        //  return{
+        //  title: title,
+        //  author:{
+        //  firstName: firstName,
+        //  lastName: lastName,
+        //  }
         var newBook = [{newTitle: title,
         newAuthor: author}];
         return newBook;
     }
     console.log(createBook("Hello World", "Julian Martinez"));
+
+    //  function showBook(book){
+    //  console.log(`Title: ${book.title}
+    //  console.log(`Author: ${book.author.firstName} ${book.author.lastName});
+    //  console.log("-"*25);
 })();
