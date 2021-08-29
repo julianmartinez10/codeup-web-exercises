@@ -30,7 +30,6 @@
 
         }
     };
-
     // log info about the circle
     // console.log("Raw circle information " + circle.getArea());
     // console.log(Math.round(circle.getArea()));
