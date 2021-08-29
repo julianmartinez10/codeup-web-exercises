@@ -12,7 +12,13 @@
  * Notes
  * Expect any positive number between 1 and 1000.
  */
-
+function addUp(num){
+    var add = 0;
+    for(var i=1; i <= num; i++){
+        add += i;
+    }
+    return add;
+}
 
 /**
  * TODO:
