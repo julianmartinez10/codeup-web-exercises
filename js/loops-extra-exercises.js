@@ -33,8 +33,20 @@ function addUp(num){
  * Notes
  * Your output must be case-sensitive (see second example).
  */
-
-
+function charCount(singChar, str){
+    var count = 0;
+    for(var i = 0; i <str.length; i++){
+        if(str[i] === singChar){
+            count += 1;
+        }else{
+            continue;
+        }
+    }
+    return count;
+}
+console.log(charCount('a', 'edabit'));
+console.log(charCount('c', 'Chamber of secrets'));
+console.log(charCount('b', 'big fat bubble'));
 /**
  * TODO:
  * Return the Index of the First Vowel
