@@ -84,11 +84,17 @@ function isVowel(input){
 
 function firstVowel(str){
     for(var i=0; i<str.length; i++){
-        if(str[0] === isVowel(str[0])){
-
+        if(isVowel(str[i])){
+            console.log(str[i]);
+            return i;
         }
     }
 }
+
+console.log(firstVowel("apple")); // 0
+console.log(firstVowel("STRAWBERRY")); // 3
+console.log(firstVowel("pInEaPPLe")); // 1
+
 
 /**
  * TODO:
