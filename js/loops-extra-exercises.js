@@ -125,18 +125,19 @@ function counting(num){
     }
     return counter
 }
-counting(318);
-console.log(counting(318)); // 3
-console.log(counting(-92563)); // 5
-console.log(counting(4666)); // 4
-console.log(counting(-314890)); // 6
-console.log(counting(654321)); // 6
-console.log(counting(638476)); // 6
+// counting(318);
+// console.log(counting(318)); // 3
+// console.log(counting(-92563)); // 5
+// console.log(counting(4666)); // 4
+// console.log(counting(-314890)); // 6
+// console.log(counting(654321)); // 6
+// console.log(counting(638476)); // 6
 
 /**
  * TODO:
  * Remove the Letters ABC
- * Create a function named removeABC that will remove the letters "a", "b" and "c" from the given string and return the modified version. If the given string does not contain "a", "b", or "c", return null.
+ * Create a function named removeABC that will remove the letters "a", "b" and "c" from the given string and return the modified version. If the
+ *  given string does not contain "a", "b", or "c", return null.
  *
  * Examples
  * >> removeABC("This might be a bit hard") ➞ "This might e  it hrd"
@@ -146,7 +147,23 @@ console.log(counting(638476)); // 6
  * Notes
  * If the given string does not contain "a", "b", or "c", return null.
  */
+function removeABC(str){
+    var lowercaseStr = str.toLowerCase();
+    var aIndex = lowercaseStr.indexOf('a');
+    var bIndex = lowercaseStr.indexOf('b');
+    var cIndex = lowercaseStr.indexOf('c');
 
+    var includesABC = lowercaseStr.includes('a') || lowercaseStr.includes('b') || lowercaseStr.includes('c')
+    if(includesABC){
+            console.log('This string contains an a or b or c!');
+            for(var i=0; i<str.length-1; i++){
+                if(lowercaseStr[i] == 'a' || lowercaseStr[i] == 'b' || lowercaseStr[i] == 'c'){
+                    console.log(`removing ${lowercaseStr[i]} at index ${i}`);
+                }
+            }
+        }
+    return str;
+}
 
 /**
  * TODO:
