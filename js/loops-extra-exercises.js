@@ -64,7 +64,31 @@ console.log(charCount('b', 'big fat bubble'));
  * "y" is not considered a vowel.
  * Input always contains a vowel.
  */
+//  isVowel Function
+function isVowel(input){
+    if(input === 'a' || input === 'A'){
+        return true;
+    }else if(input === 'e' || input === 'E'){
+        return true;
+    }else if(input === 'i' || input === 'I'){
+        return true;
+    }else if(input === 'o' || input === 'O'){
+        return true;
+    }else if(input === 'u' || input === 'U'){
+        return true;
+    }else if(input === true || input === false){
+        return false;
+    }
+    return typeof input === 'boolean';
+}
 
+function firstVowel(str){
+    for(var i=0; i<str.length; i++){
+        if(str[0] === isVowel(str[0])){
+
+        }
+    }
+}
 
 /**
  * TODO:
