@@ -113,7 +113,25 @@ console.log(firstVowel("pInEaPPLe")); // 1
  * Notes
  * For an added challenge, try to solve this without using strings.
  */
+function counting(num){
+    var numString = num.toString();
+    var counter = 0;
 
+    for(var i = 0; i < numString.length; i++){
+        if(numString[i] === '-'){
+            continue;
+        }
+        counter += 1;
+    }
+    return counter
+}
+counting(318);
+console.log(counting(318)); // 3
+console.log(counting(-92563)); // 5
+console.log(counting(4666)); // 4
+console.log(counting(-314890)); // 6
+console.log(counting(654321)); // 6
+console.log(counting(638476)); // 6
 
 /**
  * TODO:
