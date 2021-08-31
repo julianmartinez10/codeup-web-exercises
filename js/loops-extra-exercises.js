@@ -152,9 +152,11 @@ function removeABC(str){
     var aIndex = lowercaseStr.indexOf('a');
     var bIndex = lowercaseStr.indexOf('b');
     var cIndex = lowercaseStr.indexOf('c');
+    var includesABC = lowercaseStr.includes('a') || lowercaseStr.includes('b') || lowercaseStr.includes('c');
+    var strSplit = str.split("");
 
-    var includesABC = lowercaseStr.includes('a') || lowercaseStr.includes('b') || lowercaseStr.includes('c')
     if(includesABC){
+
             console.log('This string contains an a or b or c!');
             for(var i=0; i<str.length-1; i++){
                 if(lowercaseStr[i] == 'a' || lowercaseStr[i] == 'b' || lowercaseStr[i] == 'c'){
