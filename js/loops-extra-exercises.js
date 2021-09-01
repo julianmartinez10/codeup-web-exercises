@@ -147,25 +147,30 @@ function counting(num){
  * Notes
  * If the given string does not contain "a", "b", or "c", return null.
  */
-function removeABC(str){
-    var lowercaseStr = str.toLowerCase();
-    var aIndex = lowercaseStr.indexOf('a');
-    var bIndex = lowercaseStr.indexOf('b');
-    var cIndex = lowercaseStr.indexOf('c');
-    var includesABC = lowercaseStr.includes('a') || lowercaseStr.includes('b') || lowercaseStr.includes('c');
-    var strSplit = str.split("");
-
-    if(includesABC){
-
-            console.log('This string contains an a or b or c!');
-            for(var i=0; i<str.length-1; i++){
-                if(lowercaseStr[i] == 'a' || lowercaseStr[i] == 'b' || lowercaseStr[i] == 'c'){
-                    console.log(`removing ${lowercaseStr[i]} at index ${i}`);
-                }
-            }
-        }
-    return str;
-}
+// function removeABC(str){
+//     if(str == null){
+//         return null;
+//     }
+//     var lowercaseStr = str.toLowerCase();
+//     var includesABC = lowercaseStr.includes('a') || lowercaseStr.includes('b') || lowercaseStr.includes('c');
+//
+//     if(!includesABC){
+//         return null;
+//         }
+//     console.log('This string contains an a or b or c!');
+//
+//     for(var i=0; i<lowercaseStr.length; i++){
+//         if(lowercaseStr[i] == 'a' || lowercaseStr[i] == 'b' || lowercaseStr[i] == 'c'){
+//             console.log(`removing ${lowercaseStr[i]} at index ${i}`);
+//             lowercaseStr.replace('a', '');
+//             lowercaseStr.replace('b', '');
+//             lowercaseStr.replace('c', '');
+//             console.log(lowercaseStr);
+//         }
+//     }
+//
+//     return null;
+// }
 
 /**
  * TODO:
