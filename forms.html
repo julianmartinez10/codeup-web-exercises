@@ -8,12 +8,36 @@
     <form method="POST" action="https://hookb.in/LgJ7dXbnpru18Vqq83L6">
         <label for="username">Username</label>
         <input id="username" name="username" type="text" placeholder="Enter Username Please">
-        <br>
+        <br><br>
         <label for="password">Password</label>
         <input id="password" name="password" type="password">
-        <br>
+        <br><br>
         <label for="bio">Bio</label>
         <textarea id="bio" name="bio" placeholder="Enter Bio Here"></textarea>
+        <br>
+        <p>How did you hear about us?</p>
+
+        <label for="radio">Radio</label>
+        <input id="radio" name="survey" type="radio" value="radio">
+
+        <label for="billboard">Billboard</label>
+        <input id="billboard" name="survey1" type="radio" value="billboard">
+
+        <label for="internet">Internet</label>
+        <input id="internet" name="survey2" type="radio" value="internet">
+
+        <label for="other">Other</label>
+        <input id="other" name="survey3" type="radio" value="other">
+        <br>
+        <p>What web browser are you using?
+        <select name="webBrowser">
+            <option value="google" >Google</option>
+            <option value="firefox">Firefox</option>
+            <option value="safari">Safari</option>
+            <option value="aol">AOL</option>
+        </select>
+        </p>
+        <br>
         <button type="submit">Submit</button>
     </form>
 </body>
