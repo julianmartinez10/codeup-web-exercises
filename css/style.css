@@ -2,4 +2,11 @@
     color: purple;
     text-decoration: underline;
     text-decoration-color: khaki;
+    text-align: center;
+}
+/*Changing colors of h2 and underlining*/
+h2{
+    color: forestgreen;
+    text-decoration: underline;
+    text-decoration-color: darkkhaki;
 }
