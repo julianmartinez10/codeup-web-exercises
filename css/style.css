@@ -22,8 +22,30 @@ Search how to manipulate the position, sizing of this background image.*/
     background-repeat: no-repeat;
 }
 /*Add a style to change the list-style to something other than the default bullet.*/
-li {
-    list-style-type: georgian;
+/*.customBullet{*/
+/*    list-style: none;*/
+/*    padding-left: 0;*/
+/*}*/
+/*.customBullet li{*/
+/*    position: relative;*/
+/*    padding-left: 20px;*/
+/*}*/
+/*.customBullet li:before{*/
+/*    content:'';*/
+/*    width: 10px;*/
+/*    height: 10px;*/
+/*    position: absolute;*/
+/*    background-image: url("/img/PngItem_690929.png");*/
+/*    background-size: cover;*/
+/*    background-position: center;*/
+/*    left: 0;*/
+/*    top: 50%;*/
+/*    transform: translateY(-50%);*/
+/*}*/
+/*CITING above style (3 customBullets)
+http://css-workshop.com/css-ul-custom-bullet-style-with-image/*/
+ul{
+    list-style-image: radial-gradient(circle at left, red -10%, yellow, green 100%);
 }
 /*Add a style to change the font for the entire page. Use google fonts if you would like.*/
 .pageFont{
