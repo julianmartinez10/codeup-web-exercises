@@ -51,7 +51,16 @@ a {
     color: var(--link-color);
 }
 .profile {
+    height: 80px;
     background: var(--light-bg);
+}
+.profile-image{
+    position: absolute;
+    top: 46%;
+}
+.profile-form{
+    float: right;
+    line-height: 80px;
 }
 .btn {
     border: 1px solid var(--main-link-color);
