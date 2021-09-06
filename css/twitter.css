@@ -32,7 +32,9 @@ a {
     background: var(--light-bg);
     width: 100%;
     position: fixed;
+    z-index: 10;
 }
+/*added z-index above; rearranges items on page*/
 .nav-item{
     display: inline-block;
     padding: 1.5em;
