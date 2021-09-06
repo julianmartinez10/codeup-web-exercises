@@ -58,7 +58,7 @@ a {
 }
 .profile-image{
     position: absolute;
-    top: 46%;
+    top: 28%;
 }
 .profile-form{
     float: right;
@@ -75,6 +75,16 @@ a {
 .who-to-follow{
     width: calc(25% - .5em);
     margin: 0 .5em;
+}
+.container{
+    gap: 2em;
+}
+.media{
+    width: 100%;
+    background-color: var(--light-bg);
+    border-bottom: 1px solid var(--separator-color);
+    padding: 5em;
+    overflow: auto;
 }
 .btn {
     border: 1px solid var(--main-link-color);
