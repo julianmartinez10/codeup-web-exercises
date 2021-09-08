@@ -79,6 +79,7 @@ a {
 .container{
     width: 100%;
     display: flex;
+    border-spacing: 2em;
 }
 .media{
     width: 100%;
