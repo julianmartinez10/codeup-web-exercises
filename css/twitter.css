@@ -77,7 +77,8 @@ a {
     margin: 0 .5em;
 }
 .container{
-    gap: 2em;
+    width: 100%;
+    display: flex;
 }
 .media{
     width: 100%;
