@@ -103,6 +103,10 @@ a {
     float: left;
     width: calc(100% - 50px);
 }
+.profile-items{
+    list-style: none;
+    padding: 0px;
+}
 .btn {
     border: 1px solid var(--main-link-color);
     color: var(--main-link-color);
