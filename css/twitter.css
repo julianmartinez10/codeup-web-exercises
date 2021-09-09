@@ -87,11 +87,12 @@ a {
     margin: 2em;
 }
 .media{
-    width: calc(100%);
+    width: 100%;
     background-color: var(--light-bg);
     border-bottom: 1px solid var(--separator-color);
-    padding: 5em;
-    overflow: auto;
+    padding: .5em;
+    overflow: hidden;
+    /*overflow: auto;*/
 }
 .btn {
     border: 1px solid var(--main-link-color);
