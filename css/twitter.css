@@ -32,6 +32,7 @@ a {
     background: var(--light-bg);
     position: fixed;
     width: 100%;
+    z-index: 1000;
 }
 /*added z-index above; rearranges items on page*/
 .nav-item{
@@ -58,6 +59,7 @@ a {
 .profile-image{
     position: absolute;
     top: 28%;
+    /*top: 248px;*/
 }
 .profile-form{
     float: right;
