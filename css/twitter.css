@@ -94,6 +94,12 @@ a {
     overflow: hidden;
     /*overflow: auto;*/
 }
+
+.media-image{
+    max-width: 50px;
+    float: left;
+    margin-top: 1.33em;
+}
 .btn {
     border: 1px solid var(--main-link-color);
     color: var(--main-link-color);
